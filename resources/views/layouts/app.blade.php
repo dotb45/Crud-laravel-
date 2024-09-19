@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Productos</title>
+    <title>CRUD App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -18,8 +18,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <!-- Enlaces a las secciones del sistema -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ url('/proveedores') }}">Proveedores</a>
+                        <a class="nav-link" href="{{ url('/empleados') }}">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/arls') }}">ARL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/usuarios') }}">Usuarios</a>
+                    </li>
+
+                    <!-- Enlaces de Proveedores -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/proveedores') }}">Proveedores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/proveedores/create') }}">Agregar Proveedor</a>
@@ -36,3 +48,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
